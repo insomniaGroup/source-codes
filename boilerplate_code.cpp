@@ -1,10 +1,4 @@
 #pragma GCC optimize("O3")
-#ifndef ONLINE_JUDGE
-#pragma GCC target("arch=armv8-a")
-#endif
-#ifdef __x86_64__
-#pragma GCC target("sse4")
-#endif
 #include <bits/stdc++.h>
 using namespace std;
 
