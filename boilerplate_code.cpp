@@ -25,6 +25,7 @@ using pqg = priority_queue<T, vector<T>, greater<T>>;
 #define put(x) cout << x << '\n'
 #define yes cout << "YES" << '\n'
 #define no cout << "NO" << '\n'
+#define bits(n) __builtin_popcount(n)
 #define all(x) x.begin(), x.end()
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
