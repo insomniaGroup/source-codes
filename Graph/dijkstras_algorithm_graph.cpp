@@ -24,7 +24,7 @@ vector<int> dijkstra_pq(int src, int n, vector<vector<pair<int, int>>> &adj)
         for (auto it : adj[node]) {
             int adjNode = it.first;
             int edgeWeight = it.second;
-            if (distance + edgeWeight < diqst[adjNode]) {
+            if (distance + edgeWeight < dist[adjNode]) {
                 dist[adjNode] = distance + edgeWeight;
                 pq.push({distance + edgeWeight, adjNode});
             }
@@ -35,7 +35,7 @@ vector<int> dijkstra_pq(int src, int n, vector<vector<pair<int, int>>> &adj)
 
 //  using set
 vector<int> dijkstra_st(int n, int src, vector<vector<pair<int, int>>> &adj)
-{
+{a
     set<pair<int, int>> st;  // set format: {distance, node}
     st.insert({0, src});
     vector<int> dist(n, 1e9);

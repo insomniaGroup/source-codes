@@ -13,7 +13,7 @@ void dfs(int node, vector<int> &vis, vector<vector<int>> &adj)
 
 // bfs
 
-void bfs(int src, vector<vector<int>> &adj)
+void bfs(int src, vector<int> &vis, vector<vector<int>> &adj)
 {
     queue<int> q;
     vis[src] = 1;
