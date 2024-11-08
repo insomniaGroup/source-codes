@@ -1,4 +1,4 @@
-// 0 - based indexing segmentTree t
+// 0 - based indexing segmentTree seg
 
 class SegmentTree
 {
